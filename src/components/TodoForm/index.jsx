@@ -5,7 +5,11 @@ import './to-do-form.css'
 export function todoForm({ onSubmit }) {
     return(
         <form action={onSubmit} className="todo-form">
-            <TextInput placeholder="Digite o item que deseja adicionar" required name='description'/>
+            <TextInput 
+              placeholder="Digite o item que deseja adicionar"
+              required name='description'
+              defaultValue='valor padrão'
+            />
           <Button>
             Salvar Item
           </Button>
